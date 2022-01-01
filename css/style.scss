@@ -26,6 +26,18 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  &::-webkit-scrollbar{
+    width: .5rem;
+ }
+
+ &::-webkit-scrollbar-track{
+    background: transparent;
+ }
+
+ &::-webkit-scrollbar-thumb{
+    background: $cyan;
+    border-radius: 10rem;
+ }
 }
 @mixin grid($val) {
   display: grid;
