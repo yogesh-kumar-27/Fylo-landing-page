@@ -26,18 +26,18 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-  &::-webkit-scrollbar{
-    width: .5rem;
- }
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
 
- &::-webkit-scrollbar-track{
+  &::-webkit-scrollbar-track {
     background: transparent;
- }
+  }
 
- &::-webkit-scrollbar-thumb{
+  &::-webkit-scrollbar-thumb {
     background: $cyan;
     border-radius: 10rem;
- }
+  }
 }
 @mixin grid($val) {
   display: grid;
@@ -58,7 +58,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  background: #181f2a;
+  background:  hsl(217, 28%, 15%);
 }
 
 h1,
@@ -99,6 +99,7 @@ section {
 }
 
 .banner {
+  margin: 5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,17 +113,20 @@ section {
     flex-direction: column;
     text-align: center;
     h1 {
-      @include title-text(4rem);
+      margin: 3.5rem 0;
+      @include title-text(5rem);
       line-height: 1.2;
     }
     p {
       @include graph-text(1.5rem);
       letter-spacing: 1;
       margin-top: 1rem;
+      width: 60%;
     }
   }
 }
 .features {
+  margin: 5rem 0;
   .box-container {
     @include grid(42rem);
 
@@ -148,6 +152,7 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  margin: 5rem 0;
   .image {
     text-align: center;
     flex: 1 1 20rem;
@@ -172,6 +177,7 @@ section {
   }
 }
 .testomonial {
+  margin: 5rem 0;
   .box-container {
     @include grid(30rem);
     position: relative;
@@ -179,7 +185,7 @@ section {
     .dot {
       img {
         position: absolute;
-        top: -3.5rem;
+        top: -5.2rem;
         left: -1rem;
         z-index: -1;
       }
@@ -217,7 +223,7 @@ section {
   }
 }
 .newsletter {
-  // background-color: $cyan;
+  margin: 5rem 0;
   .content {
     max-width: 70rem;
     margin: 1rem auto;
@@ -258,8 +264,8 @@ section {
 }
 
 .footer {
-  background: hsl(216, 53%, 9%);
-  padding: 6rem 9%;
+  background: rgb(11, 21, 35);
+  padding: 3rem 9%;
   .box-container {
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
@@ -267,7 +273,7 @@ section {
     grid-column-gap: 50px;
     grid-row-gap: 0px;
     .box {
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
       padding: 1.5rem 0;
       .image {
         display: flex;
@@ -286,9 +292,10 @@ section {
         display: block;
         color: $white;
         padding: 1rem 0;
+        font-size: 1.5rem;
         i {
           color: $white;
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
       }
     }
@@ -299,7 +306,7 @@ section {
       i {
         color: $white;
         padding-right: 0.5rem;
-        font-size: 3rem;
+        // font-size: 3rem;
       }
     }
   }
@@ -364,7 +371,7 @@ section {
   }
   .footer {
     background: hsl(216, 53%, 9%);
-    padding: 6rem 9%;
+    padding: 6rem;
     .box-container {
       display: grid;
       grid-template-columns: 1fr;
